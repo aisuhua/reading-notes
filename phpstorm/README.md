@@ -12,11 +12,11 @@
 
 ## 技巧
 
-### 切换项目所支持的 PHP 版本
+1. 切换项目所支持的 PHP 版本
 
 Settings -> Languages & Frameworks -> PHP -> Development Environment -> PHP language level
 
-### 切换主题
+2. 切换主题
 
 Settings -> Editor -> Colors & Fonts -> Scheme -> Solarized Light -> Font (Source code Pro 16px  Line spacing 1.0)
 
