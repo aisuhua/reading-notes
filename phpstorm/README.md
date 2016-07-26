@@ -18,6 +18,6 @@ Settings -> Languages & Frameworks -> PHP -> Development Environment -> PHP lang
 
 ### 切换主题
 
-Settings -> Editor -> Colors & Fonts -> Scheme -> Solarized Light 然后字体选择 Source code Pro 16px 的字体大小 Line spacing 1.0
+Settings -> Editor -> Colors & Fonts -> Scheme -> Solarized Light -> Font (Source code Pro 16px  Line spacing 1.0)
 
 
