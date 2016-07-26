@@ -2,7 +2,7 @@
 
 ## 数据库
 
-## 直接使用 PDO
+### 直接使用 PDO
 
 ```php
 $db = new \Phalcon\Db\Adapter\Pdo\Mysql([
