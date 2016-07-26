@@ -24,7 +24,7 @@ var_dump(sum(1, 2, 3));
 
 可用的返回类型与参数类型中可用的类型相同。
 
-```
+```php
 function sum2(int ...$ints): float {
     return array_sum($ints);
 }
