@@ -18,7 +18,7 @@ function sum(int ...$ints) {
 }
 
 var_dump(sum(1, 2, 3));
-``
+```
 
 ### 返回类型声明
 
