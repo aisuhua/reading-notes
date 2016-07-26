@@ -18,13 +18,13 @@ function sum(int ...$ints) {
 }
 
 var_dump(sum(1, 2, 3));
-```
+``
 
 ### 返回类型声明
 
 可用的返回类型与参数类型中可用的类型相同。
 
-```php
+```
 function sum2(int ...$ints): float {
     return array_sum($ints);
 }
@@ -46,7 +46,7 @@ var_dump(sum2(1, 2, 3));
 
 ## 未知的问题
 
-- PHP Unicode
+- 对 Unicode 的支持
 - QPS
 - AST
 - Zend Engine 3
@@ -57,4 +57,5 @@ var_dump(sum2(1, 2, 3));
 - [PHP7革新与性能优化](http://hansionxu.blog.163.com/blog/static/24169810920158704014772/)
 - [PHP7新特性的介绍](https://segmentfault.com/a/1190000003893899)
 - [5 New Features in PHP 7](http://blog.teamtreehouse.com/5-new-features-php-7)
+- [PHP 7向下不相容問題說明文件](http://php.net/manual/en/migration70.incompatible.php)
 
