@@ -58,4 +58,5 @@ var_dump(sum2(1, 2, 3));
 - [PHP7新特性的介绍](https://segmentfault.com/a/1190000003893899)
 - [5 New Features in PHP 7](http://blog.teamtreehouse.com/5-new-features-php-7)
 - [PHP 7向下不相容問題說明文件](http://php.net/manual/en/migration70.incompatible.php)
+- [PHP7 新特征](http://www.php7.site/index.html)
 
