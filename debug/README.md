@@ -6,3 +6,4 @@
 - [PHP 的调试](http://php.net/manual/zh/debugger.php)
 - [PHP 调试利器之 PHPDBG](http://blog.jobbole.com/97714/)
 - [为 PHP 开发者准备的 12 个调试工具](http://www.oschina.net/translate/12-php-debugging-tools-for-developers)
+- [本地开发使用xdebug+phpstorm实现断点调试](http://www.ekan001.com/articles/27)
