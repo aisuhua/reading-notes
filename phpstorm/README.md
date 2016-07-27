@@ -20,4 +20,7 @@
 
   Settings -> Editor -> Colors & Fonts -> Scheme -> Solarized Light -> Font (Source code Pro 16px  Line spacing 1.0)
 
+## 参考文献
 
+- [如何使用 PhpStorm 測試與除錯?](http://oomusou.io/phpstorm/phpstorm-debug-testing/)
+- [本地开发使用xdebug+phpstorm实现断点调试](http://www.ekan001.com/articles/27)
