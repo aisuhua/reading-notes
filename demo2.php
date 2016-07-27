@@ -1,10 +1,10 @@
 <?php
 
-spl_autoload_register(function($class) {
+function __autoload($class) {
     echo 'Want to load class ' . $class;
 
     throw new \Exception($class . ' is not exists.');
-});
+}
 
 try {
 
