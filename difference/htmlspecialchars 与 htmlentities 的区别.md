@@ -43,6 +43,7 @@ echo htmlspecialchars('♠ ♣ ♥ ♦');
 
 ## 参考文献
 
+- [There's more to HTML escaping than &, <, >, and "](http://wonko.com/post/html-escaping)
 - [htmlspecialchars vs htmlentities?](https://teamtreehouse.com/community/htmlspecialchars-vs-htmlentities)
 - [htmlentities() vs. htmlspecialchars()](http://stackoverflow.com/questions/46483/htmlentities-vs-htmlspecialchars)
 
