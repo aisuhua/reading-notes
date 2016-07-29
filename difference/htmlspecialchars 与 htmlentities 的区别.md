@@ -2,7 +2,7 @@
 
 共同点：两者的作用都是把特殊字符编码成 HTML 实体，一般用于防范 XSS 攻击。
 
-区别是：`htmlspecialchars` 只会转换有限个特殊字符，而 `htmlentities` 会转换更多的特殊字符。防范 XSS 攻击使用 `htmlspecialchars` 就已经足够了，`htmlentities` 基本用不上。
+区别是：htmlspecialchars 只会转换有限个特殊字符，而 htmlentities 会转换更多的特殊字符。防范 XSS 攻击使用 htmlspecialchars 就已经足够了，htmlentities 基本用不上，因为它会把我们原本想直接输出的一些特别字符也编码了。
 
 ## 详细对比
 
@@ -39,7 +39,7 @@ echo htmlspecialchars('♠ ♣ ♥ ♦');
 ♠ ♣ ♥ ♦
 ```
 
-## 参考蚊香
+## 参考文献
 
 - [htmlspecialchars vs htmlentities?](https://teamtreehouse.com/community/htmlspecialchars-vs-htmlentities)
 - [htmlentities() vs. htmlspecialchars()](http://stackoverflow.com/questions/46483/htmlentities-vs-htmlspecialchars)
