@@ -26,6 +26,9 @@ echo implode( array_values( get_html_translation_table( HTML_SPECIALCHARS ) ), "
 //output
 " & < >
 ```
+
+补充：实际上除了以上这些字符，按照官方手册的说法，htmlspecialchars 还会对单引号进行转义。
+
 ## 例子
 
 ```php
