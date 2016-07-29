@@ -39,6 +39,8 @@ echo htmlspecialchars('♠ ♣ ♥ ♦');
 ♠ ♣ ♥ ♦
 ```
 
+## 参考蚊香
+
 - [htmlspecialchars vs htmlentities?](https://teamtreehouse.com/community/htmlspecialchars-vs-htmlentities)
 - [htmlentities() vs. htmlspecialchars()](http://stackoverflow.com/questions/46483/htmlentities-vs-htmlspecialchars)
 
