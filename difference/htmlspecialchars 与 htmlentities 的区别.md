@@ -28,21 +28,14 @@ echo implode( array_values( get_html_translation_table( HTML_SPECIALCHARS ) ), "
 
 ```php
 echo htmlentities('♠ ♣ ♥ ♦');
-```
 
-输出结果
-
-```
+//输出结果
 &spades; &clubs; &hearts; &diams;
-```
 
-```php
+
 echo htmlspecialchars('♠ ♣ ♥ ♦');
-```
 
-输出结果
-
-```
+//输出结果
 ♠ ♣ ♥ ♦
 ```
 
