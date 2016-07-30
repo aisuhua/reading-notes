@@ -16,3 +16,5 @@
 - [Top 7 PHP Security Blunders](https://www.sitepoint.com/php-security-blunders/)
 - [PHP Security – The Big Picture](http://www.acunetix.com/websitesecurity/php-security-1/)
 - [Writing Secure PHP](https://www.addedbytes.com/articles/writing-secure-php/writing-secure-php-1/)
+- [科普：对于XSS和CSRF你究竟了解多少](http://netsecurity.51cto.com/art/201407/446775.htm)
+- [浅谈 XSS & CSRF](http://www.cnblogs.com/maplejan/archive/2013/01/28/2880771.html)
