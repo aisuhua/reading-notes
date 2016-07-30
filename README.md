@@ -22,7 +22,7 @@
 
 ## TODO
 
-- [Sort](https://github.com/onmpw/Sort) 常见排序算法
+- [Sort 常见排序算法](https://github.com/onmpw/Sort) 
 - [Chrome开发者工具中文手册](https://github.com/CN-Chrome-DevTools/CN-Chrome-DevTools)
 - [DesignPatternsPHP](https://github.com/domnikl/DesignPatternsPHP)
 - [PHP Sucks! But I Like It!](http://blog.ircmaxell.com/2012/04/php-sucks-but-i-like-it.html)
