@@ -27,3 +27,9 @@ require('not_exists.php');
 
 echo 'I can\'t execute.';
 ```
+
+## 参考文献
+
+- [include](http://php.net/manual/zh/function.include.php)
+- [require](http://php.net/manual/zh/function.require.php)
+- PHP 包与命名空间 《深入 PHP：面向对象、模式和实践（第三版）》 第5章 对象工具
