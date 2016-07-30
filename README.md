@@ -20,6 +20,13 @@
 
 - [PHP 开发者实践](https://github.com/zacao/php-developer-prepares)
 
+## 规范写作
+
+- [PHP The Right Way](https://github.com/laravel-china/php-the-right-way)
+- [PHP Best Practices](https://phpbestpractices.org/)
+- [PHP-FIG PSR中文版](https://github.com/PizzaLiu/PHP-FIG)
+- [PHP Package Checklist](https://github.com/reinink/phppackagechecklist.com)
+
 ## TODO
 
 - [Sort 常见排序算法](https://github.com/onmpw/Sort) 
@@ -27,10 +34,3 @@
 - [DesignPatternsPHP](https://github.com/domnikl/DesignPatternsPHP)
 - [PHP Sucks! But I Like It!](http://blog.ircmaxell.com/2012/04/php-sucks-but-i-like-it.html)
 - [Understanding OpCodes](http://blog.golemon.com/2008/01/understanding-opcodes.html)
-
-## 规范写作
-
-- [PHP The Right Way](https://github.com/laravel-china/php-the-right-way)
-- [PHP Best Practices](https://phpbestpractices.org/)
-- [PHP-FIG PSR中文版](https://github.com/PizzaLiu/PHP-FIG)
-- [phppackagechecklist.com](https://github.com/reinink/phppackagechecklist.com)
