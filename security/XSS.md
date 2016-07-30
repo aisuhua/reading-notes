@@ -32,7 +32,9 @@ $safe_content = strip_tags($content);
 //Phalcon
 $content = $this->request->getPost('content', 'striptags');
 //或者
-$content = $this->request->getPost('content', 'string');
+$content = $_POST['content'];
+$filter = new \Phalcon\Filter();
+$filter->sanitize($content, 'striptags');
 ```
 
 输出时使用 `htmlspecialchars` 把 HTML 标签转换为 HTML 实体。
@@ -42,7 +44,8 @@ $content = $this->request->getPost('content', 'string');
 $safe_content = htmlspecialchars($content);
 
 //Phalcon
-$safe_content = htmlspecialchars($content);
+$escaper = new \Phalcon\Escaper();
+$safe_content = $escaper->escapeHtml($content);
 
 //Volt
 {{content | e}}
