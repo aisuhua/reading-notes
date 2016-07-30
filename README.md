@@ -15,6 +15,7 @@
 - [一份关于“资料汇总”的汇总](https://github.com/justjavac/awesome-awesomeness-zh_CN)
 - [PHP Trends.com](http://phptrends.com/)
 - [awesome-sysadmin](https://github.com/kahun/awesome-sysadmin)
+- [awesome-appsec](https://github.com/paragonie/awesome-appsec)
 
 ## 经验总结
 
