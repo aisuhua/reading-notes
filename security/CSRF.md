@@ -1,5 +1,9 @@
 # CSRF 攻击
 
+## 防范方法
+
+给每一个敏感操作添加 token 值，token 值每次都不一样。
+
 ## 参考文献
 
 - [浅谈CSRF攻击方式 - 推荐](http://www.cnblogs.com/hyddd/archive/2009/04/09/1432744.html)
