@@ -4,7 +4,7 @@ CSRF（Cross-site request forgery）跨站请求伪造，也被称为 'One Click
 
 绰号：冒充用户之手
 
-CSRF 利用了一个网站对于已授权的信任
+CSRF 利用了一个网站对于已授权的用户的信任
 
 ## 防范方法
 
