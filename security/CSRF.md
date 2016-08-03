@@ -1,4 +1,10 @@
-# CSRF 攻击
+# CSRF
+
+CSRF（Cross-site request forgery）跨站请求伪造，也被称为 'One Click Attack' 或者 'Session Riding'，通常缩写为 CSRF 或者 XSRF，是一种对网站的恶意利用。
+
+绰号：冒充用户之手
+
+CSRF 利用了一个网站对于已授权的用户的信任
 
 ## 防范方法
 
