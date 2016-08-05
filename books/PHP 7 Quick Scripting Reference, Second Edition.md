@@ -1,6 +1,6 @@
 # PHP 7 Quick Scripting Reference, Second Edition
 
-## 目录
+## Table of Contents
 
 ```
 Contents at a Glance
@@ -159,7 +159,7 @@ Chapter 23: User Input
 	Request Array
 	Security Concerns
 	Submitting Arrays
-	File Uploading
+    File Uploading
 	Superglobals
 Chapter 24: Cookies
 	Creating Cookies
