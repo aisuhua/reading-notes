@@ -1,51 +1,75 @@
 <?php
-$str = 'Table of Contents	table.4
-Constructor	chapter*.1
-	Format	section*.2
-	Errata	section*.3
-	Sample Code	section*.4
-	About the Author	section*.6
-Chapter 1 - Never Trust Your Users. Sanitize ALL Input!	chapter*.7
-	SQL Injection	section*.8
-	Mass Assignment	section*.13
-	Typecasting	section*.14
-	Sanitizing Output	section*.15
-Chapter Two - HTTPS/SSL/BCA/JWH/SHA and Other Random Letters; Some of Them Actually Matter.	chapter*.18
-	What is HTTPS	section*.19
-	Limitations	section*.20
-	When to use HTTPS	section*.25
-	Implementing HTTPS	section*.26
-	Paths	section*.33
-Chapter 3 - Password Encryption and Storage for Everyone	chapter*.37
-	The Small Print	section*.38
-	What is a Hash?	section*.39
-	Popular Attacks	section*.40
-	A Pinch of Salt	section*.44
-	Hashing Algorithms	section*.46
-	Storage	section*.52
-	Validation	section*.53
-	Putting It All Together	section*.54
-	Brute Force Protection	section*.57
-	Upgrading Legacy Systems	section*.58
-	Resources	section*.62
-Chapter 4 - Authentication, Access Control, and Safe File Handing	chapter*.63
-	Authentication	section*.64
-	Access Control	section*.65
-	Validating Redirects	section*.66
-	Obfuscation	section*.67
-	Safe File Handing	section*.68
-Chapter 5 - Safe Defaults, Cross Site Scripting, and Other Popular Hacks	chapter*.70
-	Never Trust Yourself - Use Safe Defaults	section*.71
-	Never Trust Dynamic Typing. It\'s Not Your Friend.	section*.72
-	Cross Site Scripting	section*.73
-	Attack Entry Points	section*.76
-	Cross Site Request Forgery	section*.78
-	Multiple Form Submits	section*.80
-	Race Conditions	section*.81
-	Outdated Libraries / External Programs	section*.82
-Destructor	chapter*.83
-	About the Author	section*.85
-	Security Audit / Consulting	section*.86
+$str = '书名页	1
+版权页	2
+作者简介	3
+前言	4
+目录	10
+第一部分 Web 服务简介	14
+	第一章 简介	15
+		Web 服务简介	16
+		Web 服务体系结构	21
+		XML 消息接发	26
+		服务描述：WSDL	29
+		服务发现：UDDI	31
+		服务传输	32
+		安全性考虑	34
+		总体观察	36
+		标准和一致	38
+第二部分 XML-RPC	39
+	第二章 XML-RPC 精髓	40
+		XML-RPC 概览	40
+		为什么选择XML-RPC？	41
+		XML-RPC 技术概览	42
+		用XML-RPC 开发服务	52
+		超越简单调用	58
+第三部分 SOAP	60
+	第三章 SOAP 精髓	61
+		SOAP 101	62
+		SOAP 消息	64
+		SOAP 编码	68
+		SOAP 通过HTTP 传输	73
+		SOAP 和W3C	76
+		SOAP 实现	77
+	第四章 Apache SOAP 快速入门	79
+		安装Apache SOAP	79
+		Hello,SOAP!	82
+		部署SOAP 服务	93
+		TcpTunnelGui 工具	98
+		Web 资源	101
+	第五章 Apache SOAP 编程	102
+		使用数组	103
+		使用JavaBean	108
+		使用直接XML 文档	119
+		处理SOAP 故障	126
+		维持会话状态	132
+第四部分 WSDL	138
+	第六章 WSDL 精髓	139
+		WSDL 规范	140
+		基本的WSDL 例子：HelloService.wsdl	142
+		WSDL 调用工具之一	148
+		基本的WSDL 例子: XMethods eBay Price Watcher Service	152
+		WSDL 调用工具之二	154
+		自动生成WSDL 文件	158
+		XML Schema 的数据类型定义	162
+第五部分 UDDI	178
+	第七章 UDDI 精髓	179
+		UDDI 简介	179
+		为什么选择UDDI？	181
+		UDDI 技术回顾	183
+		UDDI 数据模型	183
+		搜索UDDI	191
+		向UDDI 发布	207
+		UDDI 实现	223
+		Web 资源	224
+	第八章 UDDI 查询 API 快速参考	225
+		UDDI 查询API	226
+		查找限定符	248
+	第九章 UDDI 4J	250
+		准备工作	250
+		发现和获取UDDI 数据	251
+		发布UDDI 数据	259
+		UDDI4J 快速参考API	263
+词汇表	308
 ';
 
 //$pattern = '/(.*)\s+000(.*)(\n)/';
@@ -60,8 +84,9 @@ Destructor	chapter*.83
 //var_dump($matches);
 //exit;
 
-//$pattern = '/(.*)\s+[-p\d]+[\r\n]/';
+$pattern = '/(.*)\s+[-p\d]+[\r\n]/';
 $pattern = '/(.*)\s+[-p\w\.\*\d]+[\r\n]/';
+$pattern = '/(.*)\s+[-p\w\.\*_:\d]+[\r\n]/';
 $replacement = '${1}${3}';
 
 echo
