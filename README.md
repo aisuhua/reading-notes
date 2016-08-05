@@ -16,6 +16,7 @@
 - [PHP Trends.com](http://phptrends.com/)
 - [awesome-sysadmin](https://github.com/kahun/awesome-sysadmin)
 - [awesome-appsec](https://github.com/paragonie/awesome-appsec)
+- [php-must-watch](https://github.com/phptodayorg/php-must-watch)
 
 ## 经验总结
 
