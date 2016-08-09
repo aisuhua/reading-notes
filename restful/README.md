@@ -15,5 +15,7 @@ Access-Control-Expose-Headers: FooBar
 Content-Type: text/html; charset=utf-8
 ```
 
+## 参考文献
+
 - [跨域资源共享 CORS 详解](http://www.ruanyifeng.com/blog/2016/04/cors.html)
 - [HTTP访问控制(CORS)](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS)
