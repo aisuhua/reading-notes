@@ -1,7 +1,5 @@
 # HTTP
 
-## 关于
-
 发展历史
 
 - 1990 HTTP/0.9
@@ -35,7 +33,9 @@
 ## HTTPS
 
 HTTP+ 加密 + 认证 + 完整性保护 = HTTPS
+
 与 SSL 组合使用的 HTTP 被称为 HTTPS（HTTP Secure，超文本传输安全协议）或 HTTP over SSL。
+
 HTTPS 并非是应用层的一种新协议。只是 HTTP 通信接口部分用 SSL（Secure Socket Layer）和 TLS（Transport Layer Security）协议代替而已。
 通常，HTTP 直接和 TCP 通信。当使用SSL 时， 则演变成先和 SSL 通信，再由SSL 和TCP 通信了。简言之，所谓HTTPS，其实就是身披 SSL 协议这层外壳的HTTP。
 
