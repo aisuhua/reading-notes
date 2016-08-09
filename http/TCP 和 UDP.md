@@ -25,3 +25,4 @@ UDP( User Datagram Protocol ) 用户数据报协议，是一个简单的面向�
 
 - [TCP与UDP的区别](http://blog.csdn.net/yipiankongbai/article/details/24435977)
 - [TCP和UDP的区别以及应用有什么不同？](http://blog.csdn.net/dief913975849/article/details/6851615)
+- [面向报文（UDP）和面向字节流（TCP）的区别](http://blog.csdn.net/ce123_zhouwei/article/details/8976006)
