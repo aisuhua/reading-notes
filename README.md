@@ -2,7 +2,13 @@
 
 读书笔记
 
-## 资料
+## 常识
+
+- PHP 各版本的生命周期[Supported Versions](http://php.net/supported-versions.php)
+
+## 学习资源
+
+### 资料
 
 - [awesome-php](https://github.com/ziadoz/awesome-php)
 - [awesome-php-zh_CN](https://github.com/CraryPrimitiveMan/awesome-php-zh_CN)
@@ -18,18 +24,18 @@
 - [awesome-appsec](https://github.com/paragonie/awesome-appsec)
 - [php-must-watch](https://github.com/phptodayorg/php-must-watch)
 
-## 经验总结
+### 经验总结
 
 - [PHP 开发者实践](https://github.com/zacao/php-developer-prepares)
 
-## 规范写作
+### 规范写作
 
 - [PHP The Right Way](https://github.com/laravel-china/php-the-right-way)
 - [PHP Best Practices](https://phpbestpractices.org/)
 - [PHP-FIG PSR中文版](https://github.com/PizzaLiu/PHP-FIG)
 - [PHP Package Checklist](https://github.com/reinink/phppackagechecklist.com)
 
-## TODO
+### TODO
 
 - [Sort 常见排序算法](https://github.com/onmpw/Sort) 
 - [Chrome开发者工具中文手册](https://github.com/CN-Chrome-DevTools/CN-Chrome-DevTools)
