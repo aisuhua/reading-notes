@@ -1,78 +1,165 @@
 <?php
-$str = '封面	-19
-数字版权声明	-18
-译者介绍	-17
-扉页	-16
-版权	-15
-版权声明	-14
-O’Reilly Media, Inc.介绍	-13
-目录	-12
-	前言	-8
-	第1章　什么是JSON	深入理解（全）.indd:.142038
-		1.1　JSON是一种数据交换格式	深入理解（全）.indd:.142042
-		1.2　JSON独立于编程语言	深入理解（全）.indd:.142046
-		1.3　专业术语和概念	深入理解（全）.indd:.142050
-	第2章　JSON语法	深入理解（全）.indd:.142058
-		2.1　JSON基于JavaScript对象字面量	深入理解（全）.indd:.142062
-		2.2　名称-值对	深入理解（全）.indd:.142066
-		2.3　正确的JSON语法	深入理解（全）.indd:.142070
-		2.4　语法验证	深入理解（全）.indd:.142074
-		2.5　JSON文件	深入理解（全）.indd:.142078
-		2.6　JSON的媒体类型	深入理解（全）.indd:.142082
-		2.7　专业术语和概念	深入理解（全）.indd:.142086
-	第3章　JSON的数据类型	深入理解（全）.indd:.142094
-		3.1　数据类型简介	深入理解（全）.indd:.142098
-		3.2　JSON中的数据类型	深入理解（全）.indd:.142102
-		3.3　JSON中的对象数据类型	深入理解（全）.indd:.142106
-		3.4　JSON中的字符串类型	深入理解（全）.indd:.142111
-		3.5　JSON中的数字类型	深入理解（全）.indd:.142115
-		3.6　JSON中的布尔类型	深入理解（全）.indd:.142119
-		3.7　JSON中的null类型	深入理解（全）.indd:.142123
-		3.8　JSON中的数组类型	深入理解（全）.indd:.142127
-		3.9　专业术语和概念	深入理解（全）.indd:.142131
-	第4章　JSON Schema	深入理解（全）.indd:.142139
-		4.1　验证的魔力	深入理解（全）.indd:.142143
-		4.2　JSON Schema简介	深入理解（全）.indd:.142147
-		4.3　专业术语和概念	深入理解（全）.indd:.142152
-	第5章　JSON中的安全问题	深入理解（全）.indd:.142161
-		5.1　客户端和服务端的关系	深入理解（全）.indd:.142165
-		5.2　跨站请求伪造	深入理解（全）.indd:.142169
-		5.3　注入攻击	深入理解（全）.indd:.142173
-			5.3.1　跨站脚本攻击	深入理解（全）.indd:.142177
-			5.3.2　安全漏洞：决策上的失误	深入理解（全）.indd:.142181
-		5.4　专业术语和概念	深入理解（全）.indd:.142185
-	第6章　JavaScript中的XMLHttpRequest 与Web API	深入理解（全）.indd:.142194
-		6.1　Web API	深入理解（全）.indd:.142198
-		6.2　JavaScript中的XMLHttpRequest对象	深入理解（全）.indd:.142202
-		6.3　混乱的关系与共享的规则	深入理解（全）.indd:.142206
-			6.3.1　跨域资源共享	深入理解（全）.indd:.142210
-			6.3.2　JSON-P	深入理解（全）.indd:.142214
-		6.4　专业术语和概念	深入理解（全）.indd:.142218
-	第7章　JSON与客户端框架	深入理解（全）.indd:.142226
-		7.1　jQuery和JSON	深入理解（全）.indd:.142230
-		7.2　AngularJS	深入理解（全）.indd:.142235
-		7.3　专业术语和概念	深入理解（全）.indd:.142239
-	第8章　JSON与NoSQL	深入理解（全）.indd:.142247
-		8.1　CouchDB数据库	深入理解（全）.indd:.142251
-		8.2　CouchDB API	深入理解（全）.indd:.142255
-		8.3　专业术语和概念	深入理解（全）.indd:.142259
-	第9章　服务端的JSON	深入理解（全）.indd:.142267
-		9.1　序列化、反序列化与请求JSON	深入理解（全）.indd:.142271
-			9.1.1　ASP.NET	深入理解（全）.indd:.142276
-			9.1.2　PHP	深入理解（全）.indd:.142280
-		9.2　发送JSON HTTP请求的其他方式	深入理解（全）.indd:.142285
-			9.2.1　Ruby on Rails	深入理解（全）.indd:.142289
-			9.2.2　Node.js	深入理解（全）.indd:.142293
-			9.2.3　Java	深入理解（全）.indd:.142297
-		9.3　专业术语和概念	深入理解（全）.indd:.142301
-	第10章　总结	深入理解（全）.indd:.142309
-		10.1　作为配置文件的JSON	深入理解（全）.indd:.142313
-		10.2　结语	深入理解（全）.indd:.142318
-	作者简介	深入理解（全）.indd:.142322
-	封面介绍	深入理解（全）.indd:.142326
-	新书宣传页	111
-关注图灵	113
-看完了	115
+$str = 'Cover	-17
+Copyright	-15
+Credits	-14
+About the Author	-13
+About the Reviewers	-12
+www.PacktPub.com	-8
+Table of Contents	-6
+Preface	p17
+Chapter 1: Installing PHPUnit	p25
+	Requirements	p26
+		Running PHP from the command line	p27
+	Composer – the dependency manager for PHP	p28
+		Installing Composer	p29
+		Installation	p29
+			Local installation	p30
+			System-wide installation	p30
+	Installing PEAR	p31
+		Installing PHPUnit	p32
+	Other installation methods	p33
+		Installing the Linux package	p33
+		Manual installation	p34
+	Testing the installation	p34
+		Xdebug	p37
+			Installing Xdebug	p37
+	Summary	p39
+Chapter 2: PHPUnit Support in IDEs	p41
+	IDEs and PHPUnit	p42
+		NetBeans	p43
+		Zend Studio	p47
+		Eclipse PDT	p50
+			Installing MakeGood	p51
+			Creating your FirstTest	p55
+		PhpStorm	p57
+	Summary	p61
+Chapter 3: Tests and What They\'re All About	p63
+	Understanding unit testing	p64
+		What is a unit test?	p64
+		Assertions	p64
+		The importance of unit testing	p65
+		Testing all possible scenarios	p65
+		What makes a good test?	p66
+		When to write tests	p66
+	Anatomy of a PHPUnit test	p67
+		Defining test methods	p69
+		Testing functions	p69
+		Testing methods	p72
+	The MVC application architecture and tests	p77
+		Testing controllers	p78
+	Summary	p80
+Chapter 4: Testing Dependencies and Exceptions	p83
+	Detecting dependencies	p84
+	Handling dependencies	p88
+	Exceptions are expected	p96
+		Testing errors and exceptions	p97
+	Summary	p99
+Chapter 5: Running Tests from the Command Line	p101
+	Running tests	p101
+		Processing test results	p102
+			Test statuses	p103
+		Command-line switches	p106
+			Logging results	p107
+			Code coverage	p107
+			Including and excluding tests from the execution	p107
+			When to stop the test execution	p108
+			Configuration options	p108
+		Code coverage analysis	p109
+	Summary	p112
+Chapter 6: Test Isolation and Interaction	p113
+	Test fixtures	p113
+		Before and after each test method	p114
+		Before and after each test suite class	p115
+	Global state	p116
+	Test dependencies	p119
+	Data providers	p120
+	Summary	p122
+Chapter 7: Organizing Tests	p123
+	The PHPUnit XML configuration file	p123
+		Test listeners	p125
+		Configuring the code coverage	p126
+	Where to store tests	p126
+		Test suites	p127
+		Groups	p128
+	Using the bootstrap file	p129
+	Summary	p130
+Chapter 8: Using Test Doubles	p131
+	Creating test doubles	p132
+	Test doubles in action	p135
+		Using fake	p138
+		Using stubs	p139
+		Using mocks and expectations	p142
+		Test proxies	p147
+	Understanding Mockery	p148
+		Installation methods	p148
+		Comparing Mockery to PHPUnit	p149
+		How to use Mockery	p151
+	Summary	p153
+Chapter 9: Database Testing	p155
+	Which database to use	p156
+	Tests for a database	p157
+	DBUnit	p168
+		Installing DBUnit	p168
+		Database test cases	p168
+		Datasets	p169
+		Using DBUnit	p170
+	Doctrine 2 ORM and database testing	p175
+	Summary	p182
+Chapter 10: Testing APIs	p183
+	An example of integration testing	p184
+	Testing the PayPal API	p193
+	Testing the Facebook API	p200
+	Testing the Twitter API	p205
+	Testing the service-oriented architecture	p209
+	Summary	p210
+Chapter 11: Testing Legacy Code	p211
+	Testing spaghetti code	p213
+		Black box testing	p213
+		Using Reflection	p214
+	Handling dependencies	p217
+		The Patchwork library	p217
+		The vfsStream library	p220
+		The runkit PHP extension	p223
+	Summary	p229
+Chapter 12: Functional Tests in the Web Browser Using Selenium	p231
+	Installing Selenium	p232
+		The Selenium IDE	p232
+		The Selenium Server	p235
+			Installing drivers	p237
+		The PHPUnit Selenium extension	p237
+	Testing in the browser	p238
+		Recording Selenium tests	p238
+		PHPUnit Selenium2TestCase	p242
+	Writing Selenium tests	p245
+	PHP-SeleniumClient	p259
+	Organizing Selenium tests	p261
+	Summary	p262
+Chapter 13: Continuous Integration	p263
+	Using a Travis CI hosted service	p264
+		Setting up Travis CI	p265
+		Using Travis CI	p267
+	Using the Jenkins CI server	p269
+		Installation	p269
+		Usage	p270
+			Creating a job	p271
+			Results	p273
+	Using the Xinc PHP CI server	p274
+		Installation	p274
+		Usage	p276
+	Summary	p281
+Chapter 14: PHPUnit Alternatives, Extensions, Relatives, and BDD	p283
+	Unit testing alternatives	p284
+	PHPUnit extensions	p284
+	Behavior-driven development	p285
+		Understanding BDD	p285
+		Testing with PHPSpec	p286
+			Installing PHPSpec	p287
+			Using PHPSpec	p288
+		Functional testing with Behat	p293
+			Installing Behat	p294
+			Using Behat	p295
+	Summary	p300
+Index	p303
 ';
 
 //$pattern = '/(.*)\s+000(.*)(\n)/';
