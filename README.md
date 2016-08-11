@@ -4,7 +4,7 @@
 
 ## 常识
 
-- PHP 各版本的生命周期[Supported Versions](http://php.net/supported-versions.php)
+- PHP 各版本的生命周期 [Supported Versions](http://php.net/supported-versions.php)
 
 ## 学习资源
 
