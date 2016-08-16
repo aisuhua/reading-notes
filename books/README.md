@@ -21,19 +21,19 @@
 
 ## HTTP
 
-1. 《图解HTTP》 基本涵盖HTTP方方面面，但讲解得比较简单。
+1. 《图解HTTP》 基本涵盖HTTP方方面面，但讲解得比较简单。**（已读完）**
 2. 《HTTP 小书》 
 3. 《HTTP权威指南》 深入和全面了解HTTP。
-4. HTTP协议详解 - 网友写的学习笔记
+4. HTTP协议详解 - 网友写的学习笔记。**（已读完）**
 
 ## 服务器
 
-1. 《Nginx高性能Web服务器详解》 由浅入深，从使用到源码解析全面讲解Nginx。
+1. 《Nginx高性能Web服务器详解》 由浅入深，从使用到源码解析全面讲解Nginx。**（已读30%）**
 2. 《Nginx HTTP Server Third Edition》
 
 ## 工具篇
 
-1. 《PHPUnit Essentials》 系统讲解了PHPUnit是什么、为什么用、如何用等等问题。
+1. 《PHPUnit Essentials》 系统讲解了PHPUnit是什么、为什么用、如何用等等问题。**（已读50%）**
 2. 《GitHub 入门与实践》
 3. 《JSON必知必会》
 
