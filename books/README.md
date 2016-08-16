@@ -11,6 +11,7 @@
 7. PHP 7 What To Expect - 快速了解PHP7的新特征 **（已读完）**
 8. 《Getting Started with Phalcon》
 9. 《Learning Phalcon PHP》
+10. 《PHP开发者实践》 - PHP相关知识的总结，[在线查看](https://github.com/zacao/php-developer-prepares)。
 
 ## MySQL and NoSQL
 
