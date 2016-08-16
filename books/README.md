@@ -8,10 +8,10 @@
 4. 《Modern PHP（中文版）》 快速了解现代PHP编程的一些新特征。**（已读80%）**
 5. 《Building Secure PHP Apps》 总结了PHP开发过程中可能存在的安全问题。**（已读70%）**
 6. 《Iterating PHP Iterators - Cal Evans》 教会你如何使用迭代器。**（已读30%）**
-7. PHP 7 What To Expect - 快速了解PHP7的新特征 **（已读完）**
-8. 《Getting Started with Phalcon》
-9. 《Learning Phalcon PHP》
-10. 《PHP开发者实践》 - PHP相关知识的总结，[在线查看](https://github.com/zacao/php-developer-prepares)。
+7. 《Getting Started with Phalcon》
+8. 《Learning Phalcon PHP》
+9. 《PHP Cookbook 3rd Edition》 大量PHP经典案例
+10. 《PHP and MySQL Web Development (5th Edition)》 PHP入门经典，2016.10才出版，[在线预览](https://www.amazon.com/PHP-MySQL-Development-Developers-Library/dp/0321833899/ref=dp_ob_title_bk)
 
 ## MySQL and NoSQL
 
@@ -23,9 +23,7 @@
 ## HTTP
 
 1. 《图解HTTP》 基本涵盖HTTP方方面面，但讲解得比较简单。**（已读完）**
-2. 《HTTP 小书》 
-3. 《HTTP权威指南》 深入和全面了解HTTP。
-4. HTTP协议详解 - 网友写的学习笔记。**（已读完）**
+2. 《HTTP权威指南》 深入和全面了解HTTP。
 
 ## 服务器
 
@@ -37,10 +35,22 @@
 1. 《PHPUnit Essentials》 系统讲解了PHPUnit是什么、为什么用、如何用等等问题。**（已读50%）**
 2. 《GitHub 入门与实践》
 3. 《JSON必知必会》
+4. 《PhpStorm Cookbook》
 
 ## 其他
 
 1. 《Web服务精髓》 系统阐述由SOAP/WSDL/UDDI组成的WebService。
+
+## 知识碎片
+
+1. PHP 7 What To Expect - 快速了解PHP7的新特征 **（已读完）**
+2. HTTP协议详解 - 网友写的学习笔记。**（已读完）**
+3. HTTP 小书
+4. PHP开发者实践 - PHP相关知识的总结，[在线查看](https://github.com/zacao/php-developer-prepares)。
+
+## 电子书下载
+
+[IT eBooks](http://it-ebooks.info/)
 
 
 

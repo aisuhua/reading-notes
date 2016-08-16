@@ -42,3 +42,4 @@
 - [DesignPatternsPHP](https://github.com/domnikl/DesignPatternsPHP)
 - [PHP Sucks! But I Like It!](http://blog.ircmaxell.com/2012/04/php-sucks-but-i-like-it.html)
 - [Understanding OpCodes](http://blog.golemon.com/2008/01/understanding-opcodes.html)
+- [正则表达式](http://deerchao.net)
