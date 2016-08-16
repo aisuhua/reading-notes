@@ -28,7 +28,7 @@
 
 ## 服务器
 
-1. 《Nginx高性能Web服务器详解》 由浅入深，从使用到源码解析全面讲解Nginx。**（已读30%）**
+1. 《Nginx高性能Web服务器详解》 由浅入深，从使用到源码解析全面讲解Nginx。**（已读40%）**
 2. 《Nginx HTTP Server Third Edition》
 
 ## 工具篇
