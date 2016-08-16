@@ -39,7 +39,7 @@
 
 ## 其他
 
-1. 《Web服务精髓》 系统阐述SOAP/WSDL/UDDI组成的WebService。
+1. 《Web服务精髓》 系统阐述由SOAP/WSDL/UDDI组成的WebService。
 
 
 
