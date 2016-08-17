@@ -45,8 +45,8 @@
 
 1. PHP 7 What To Expect - 快速了解PHP7的新特征 **（已读完）**
 2. HTTP协议详解 - 网友写的学习笔记。**（已读完）**
-3. HTTP 小书
-4. PHP开发者实践 - PHP相关知识的总结，[在线查看](https://github.com/zacao/php-developer-prepares)。
+3. HTTP 小书 - [在线阅读](http://www.ituring.com.cn/book/1791)
+4. PHP开发者实践 - PHP相关知识的总结，[在线阅读](https://github.com/zacao/php-developer-prepares)。
 
 ## 电子书下载
 
