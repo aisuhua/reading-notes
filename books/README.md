@@ -3,7 +3,7 @@
 ## PHP
 
 1. 《深入PHP：面向对象、模式与实践(第3版)》 面向对象最好的诠释，进阶必备书籍。**（已读60%）**
-2. 《PHP Objects, Patterns, and Practice, 4th Edition》
+2. 《PHP Objects, Patterns, and Practice, 4th Edition》。
 3. 《PHP 7 Quick Scripting Reference, Second Edition》 知识点的清晰划分，快速查找手册。
 4. 《Modern PHP（中文版）》 快速了解现代PHP编程的一些新特征。**（已读80%）**
 5. 《Building Secure PHP Apps》 总结了PHP开发过程中可能存在的安全问题。**（已读70%）**
@@ -50,7 +50,7 @@
 
 ## 电子书下载
 
-[IT eBooks](http://it-ebooks.info/)
+[IT eBooks](http://it-ebooks.info/)、[SaltTiger](http://www.salttiger.com/)
 
 
 

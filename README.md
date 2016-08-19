@@ -35,7 +35,7 @@
 - [PHP-FIG PSR中文版](https://github.com/PizzaLiu/PHP-FIG)
 - [PHP Package Checklist](https://github.com/reinink/phppackagechecklist.com)
 
-### TODO
+### 文章
 
 - [Sort 常见排序算法](https://github.com/onmpw/Sort) 
 - [Chrome开发者工具中文手册](https://github.com/CN-Chrome-DevTools/CN-Chrome-DevTools)
@@ -43,3 +43,9 @@
 - [PHP Sucks! But I Like It!](http://blog.ircmaxell.com/2012/04/php-sucks-but-i-like-it.html)
 - [Understanding OpCodes](http://blog.golemon.com/2008/01/understanding-opcodes.html)
 - [正则表达式](http://deerchao.net)
+- [十二因子應用程式](http://www.the12factorapp.com/)
+- [程序员编写技术文档的新手指南](http://blog.jobbole.com/98876/)
+- [阿里实习offer五面经验与总结](http://www.nowcoder.com/discuss/4056)
+- [如何正确配置 Nginx 和 PHP](http://blog.jobbole.com/50121/)
+- [唯品会的订单分库分表实践总结以及关键步骤](http://mp.weixin.qq.com/s?__biz=MzA5Nzc4OTA1Mw==&mid=512113930&idx=1&sn=72a157196ba0c949168dbfd25fc03d4b#rd)
+- [四种常见的 POST 提交数据方式](https://imququ.com/post/four-ways-to-post-data-in-http.html)
