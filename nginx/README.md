@@ -27,5 +27,6 @@ Nginx 服务器的工作进程调用 IO 后，就去进行其他工作了；当 
 ## 参考文献
 
 - 《Nginx高性能Web服务器详解》 第3章 Nginx 服务器架构初探
+- [Nginx为什么比Apache Httpd高效：原理篇](http://www.toxingwang.com/linux-unix/linux-basic/1712.html)
 
 
