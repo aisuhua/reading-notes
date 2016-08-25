@@ -47,7 +47,7 @@
 2. HTTP协议详解 - 网友写的学习笔记。**（已读完）**
 3. HTTP 小书 - [在线阅读](http://www.ituring.com.cn/book/1791)
 4. PHP开发者实践 - PHP相关知识的总结，[在线阅读](https://github.com/zacao/php-developer-prepares)。
-5. [Lessons Learned in Software Development](https://henrikwarne.com/2015/04/16/lessons-learned-in-software-development/) 非常好的具有启发意义的一篇文章**（已读完）**
+5. Lessons Learned in Software Development - 具有很强的启发性，[在线阅读](https://henrikwarne.com/2015/04/16/lessons-learned-in-software-development/)（已读完）**
 
 ## 电子书下载
 
