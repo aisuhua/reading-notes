@@ -12,6 +12,8 @@
 1. 顺序查找
 2. 二分查找（折半查找）
 
+![查找算法](http://images.cnitblog.com/blog/311549/201308/18162051-ae196c87c3e94ef1a46c8a327f972163.jpg)
+
 ## 参考文献
 
 - [常用排序算法](http://www.onmpw.com/tm/xwzj/algorithm_112.html)

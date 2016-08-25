@@ -44,3 +44,7 @@ function quick_sort($arr)
     //合并左边 标尺 右边
     return array_merge($left_array, array($base_num), $right_array);
 }
+
+$arr = [8, 3, 9, 10, 1, 4];
+
+var_dump(quick_sort($arr));
