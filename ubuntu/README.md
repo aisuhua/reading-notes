@@ -91,7 +91,7 @@ apt-get update
 
 需要的工具 [shadowsocks-qt5](https://github.com/shadowsocks/shadowsocks-qt5)，[GenPAC](https://github.com/JinnLynn/genpac)，[polipo](https://www.irif.univ-paris-diderot.fr/~jch/software/polipo/)，[Proxy SwitchyOmega](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif) （可选）。
 
-1. 安装 shadowsocks-qt5
+### 安装 shadowsocks-qt5
 
 ```shell
 add-apt-repository ppa:hzwhuang/ss-qt5
@@ -105,7 +105,7 @@ apt-get install shadowsocks-qt5
 
 打开 Startup applications，添加一个开机子启动程序，Name 填写 shadowsocks-qt5，Command 填写 /usr/bin/ss-qt5，保存即可。下次开机时，它就会自启动，加上之前设置的启动自动连接网络，那么每次重启，VPN 都是有效的。
 
-2. 安装 GenPAC
+### 安装 GenPAC
 
 安装 pip 和 genpac。genpac 的作用是生成一个 autoproxy.pac 文件，这个文件中定义了哪一些网站需要爬梯，哪一些是无需爬梯的，所以它的好处的按需爬梯，不需要每次爬梯。
 
@@ -121,13 +121,13 @@ cd /home/suhua/Documents/
 genpac -p "SOCKS5 127.0.0.1:1080" --gfwlist-proxy="SOCKS5 127.0.0.1:1080" --output="autoproxy.pac" --gfwlist-url="https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt"
 ```
 
-3. 设置全局网络使用 VPN
+### 设置全局网络使用 VPN
 
 System Settings -> Networks -> Network Proxy -> Select Method(Automatic) -> Fill in Configuration URL: "file:///home/suhua/Documents/autoproxy.pac" -> Apply system wide -> Enter password. 
 
 此时，你打开任意一款浏览器，都可以科学上网了。但是在 shell 中使用 wget/ping/curl 等等命令是依然被墙的，那么我们需要把 scoket5 代理转换为 HTTP 代理才行，需要用到下面这个工具。
 
-4. 安装 polipo
+### 安装 polipo
 
 这款软件能够把 socket 代理转换成 http 代理，从而使得不止是浏览器能够上网，shell 的其他命令也会奏效。
 
@@ -185,7 +185,7 @@ curl www.google.com
 
 如果有内容返回，则说明爬梯成功。如果需要取消 http 代理，可以使用命令 `export http_proxy=""`。其实很多时候是用不到梯子的，因为大多数源国内都有，所以在使用完代理后，记得取消，不然会出现所有命令都走代理的情况。
 
-## Proxy SwitchyOmega
+### Proxy SwitchyOmega
 
 实际上，由于上面已经设置了全局 VPN，所以这款 chrome 浏览器插件就没有必要装了，不过它比全局设置会更加容易管理，可以随时添加一些不能访问的网站到白名单当中，所以这里说一下。
 
