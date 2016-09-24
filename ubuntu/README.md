@@ -217,6 +217,41 @@ unity.wasCapable = "FALSE"
 
 实际上，这样做只想解决虚拟机读写硬盘过多而造成死机的问题。不过虽然这样配置，实际上效果不太大的，后来是通过给虚拟机分配更多的内存而解决该问题的。具体可以参考后面的几篇参考文章。
 
+## 安装常用软件
+
+### vim 支持中文
+
+安装 vim 的完整版
+
+```shell
+apt-get install vim
+```
+
+### 谷歌浏览器
+
+```shell
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+# 安装
+dpkg -i google-chrome-stable_current_amd64.deb
+# 解决依赖问题，然后再安装
+apt-get install -f
+```
+
+### 搜狗输入法
+
+```shell
+wget http://cdn2.ime.sogou.com/dl/index/1465191139/sogoupinyin_2.0.0.0078_amd64.deb
+
+# 安装
+dpkg -i sogoupinyin_2.0.0.0078_amd64.deb
+# 解决依赖问题，然后再安装
+apt-get install -f
+```
+
+输入法安装后，需要把它添加到可用输入法中才能使用，具体步骤如下：System Settings -> Language Support -> Keyboard input method system [fcitx]。接着就可以重启电脑了。
+
+电脑重启完后，还是没有看到搜狗输入法，此时，你可以点击右上角的键盘图形，在弹出来的窗口中，点击 + 号，然后把一个勾去掉，搜索 sogou，把它添加进去。此时你再切换输入法，就可以看到了。
 
 
 ## 参考文献
@@ -230,63 +265,8 @@ unity.wasCapable = "FALSE"
 - [使用Privoxy将socks5代理转为http代理](https://blog.phpgao.com/privoxy-shadowsocks.html)
 - [ubuntu:(设置终端代理IP)简单有效地设置全局代理上网](http://jileniao.net/set-global-proxy-for-ubuntu.html)
 - [终端走代理的几种方法](http://blog.csdn.net/u014015972/article/details/50647019)
+- [谷歌浏览器Chrome+ShadowSocks+Proxy SwitchyOmega自动翻墻教程](https://ii-i.org/archives/289)
+- [ubuntu 14 安装 shadowsocks-qt5](http://blog.sina.com.cn/s/blog_535c4b000102wj0u.html)
 - [VMware Performance Enhancing Tweaks (Over-the-Counter Solutions)](http://artykul8.com/2012/06/vmware-performance-enhancing/)
 - [关于开启虚拟机磁盘利用率100%问题](http://tieba.baidu.com/p/4612619858)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
