@@ -1,5 +1,4 @@
-# Ubuntu
-
+# Ubuntu 
 ubuntu 16.04 / VMware Workstation 12 / Window 10 
 
 ## 网络设置
@@ -191,6 +190,35 @@ curl www.google.com
 
 首先安装 SwitchyOmega，[扩展下载地址](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif)，具体的配置过程，可以参考后面几篇参考文献。
 
+
+### 优化虚拟机
+
+修改虚拟机的几个配置，打开配置文件 C:\ProgramData\VMware\VMware Workstation\settings.ini。修改如下：
+
+```
+printers.enabled = "FALSE"
+
+mainMem.useNamedFile = "FALSE"
+
+logging = "FALSE"
+snapshot.disabled = "TRUE"
+MemTrimRate = "0"
+sched.mem.pshare.enable = "FALSE"
+MemAllowAutoScaleDown = "FALSE"
+prefvmx.useRecommendedLockedMemSize = "TRUE"
+
+isolation.tools.unity.disable = "TRUE"
+unity.allowCompositingInGuest = "FALSE"
+unity.enableLaunchMenu = "FALSE"
+unity.showBadges = "FALSE"
+unity.showBorders = "FALSE"
+unity.wasCapable = "FALSE"
+```
+
+实际上，这样做只想解决虚拟机读写硬盘过多而造成死机的问题。不过虽然这样配置，实际上效果不太大的，后来是通过给虚拟机分配更多的内存而解决该问题的。具体可以参考后面的几篇参考文章。
+
+
+
 ## 参考文献
 
 - [Ubuntu15.04配置静态IP和DNS](http://blog.csdn.net/crave_shy/article/details/48518011)
@@ -202,7 +230,8 @@ curl www.google.com
 - [使用Privoxy将socks5代理转为http代理](https://blog.phpgao.com/privoxy-shadowsocks.html)
 - [ubuntu:(设置终端代理IP)简单有效地设置全局代理上网](http://jileniao.net/set-global-proxy-for-ubuntu.html)
 - [终端走代理的几种方法](http://blog.csdn.net/u014015972/article/details/50647019)
-
+- [VMware Performance Enhancing Tweaks (Over-the-Counter Solutions)](http://artykul8.com/2012/06/vmware-performance-enhancing/)
+- [关于开启虚拟机磁盘利用率100%问题](http://tieba.baidu.com/p/4612619858)
 
 
 
