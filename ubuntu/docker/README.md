@@ -54,9 +54,33 @@ docker exec -it first_container /bin/bash
 
 值得注意的是通过 `docker attach` 命令附着上的容器，一旦退出 shell 交互界面，那么该容器会随即退出。这与通过在容器中执行命令进入容器的方式不太一样。
 
+## Docker DNS 問題
+
+上面提到過在使用 `docker run` 命令运行容器时，需要指定 `--dns` 参数。其实，除了该方法之外，我们可以对 Docker 进行全局配置。配置方法如下：
+
+```shell
+vi /etc/docker/daemon.json
+
+{
+    "dns": ["233.5.5.5", "223.6.6.6"]
+}
+
+:wq
+```
+
+查看 daemon.json 文件的更多配置项可以参考 [linux-configuration-file](https://docs.docker.com/engine/reference/commandline/dockerd/#/linux-configuration-file)。
+
+修改完成后，重启以下 Docker 守护进程，那么以后每次创建的容器都是使用这些 dns。
+
+```shell
+service docker restart
+```
+
 ## 常见问题
 
-1. 容器关闭后，里面的数据（比如所安装的软件）会丢失吗？ --- 是不会的。只有在删除容器后，里面的数据才会被删除。
+1. 容器关闭后，里面的数据（比如所安装的软件）会丢失吗？ 
+
+    答：是不会的。只有在删除容器后，里面的数据才会被删除。
 
 ## 参考文献
 
