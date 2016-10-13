@@ -2,7 +2,7 @@
 
 ## 知识点
 
-1. 如何查看 PHP 的安装信息？
+### 如何查看 PHP 的安装信息？
 
 答：通过 phpinfo 查看 PHP 的详细安装信息，如下是一些最常关注的：
 
@@ -20,7 +20,7 @@ extension_dir	/usr/lib/php5/20131226
 
 除此之外，可以通过命令 `which php` 查看 php 命令所在目录。
 
-2. 如何查看 CLI 所使用的 php.ini 配置文件。
+### 如何查看 CLI 所使用的 php.ini 配置文件？
 
 答：CLI 和 php 进程所使用的是两个不一样的 php.ini 文件。可以通过命令 `php --ini` 查看 CLI 配置文件的位置。
 
