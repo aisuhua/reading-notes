@@ -31,12 +31,10 @@ git checkout master
 git merge music
 git branch -d music
 git push origin --delete music
-```
 
 # 新建文件模块开发任务所对应的分支
 git checkout -b file
-
-# 
+....
 ```
 
 ### 取消 add
