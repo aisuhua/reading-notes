@@ -1,4 +1,5 @@
 # Ubuntu 
+
 ubuntu 16.04 / VMware Workstation 12 / Window 10 
 
 ## 网络设置
