@@ -250,10 +250,15 @@ dpkg -i sogoupinyin_2.0.0.0078_amd64.deb
 apt-get install -f
 ```
 
+## 其他优化
+
+### 开机不需要输入账号密码
+
+System settings - User accounts - Unlock - Automatic login (On) - Lock .
+
 输入法安装后，需要把它添加到可用输入法中才能使用，具体步骤如下：System Settings -> Language Support -> Keyboard input method system [fcitx]。接着就可以重启电脑了。
 
 电脑重启完后，还是没有看到搜狗输入法，此时，你可以点击右上角的键盘图形，在弹出来的窗口中，点击 + 号，然后把一个勾去掉，搜索 sogou，把它添加进去。此时你再切换输入法，就可以看到了。
-
 
 ## 参考文献
 
