@@ -88,7 +88,7 @@ service docker restart
 
 ## 搭建私有的 Register
 
-可以参考以下两个容器：
+可以参考以下两个镜像：
 
 1. 官方提供的简易版 [Register](https://hub.docker.com/_/registry/)，没有管理界面，只提供相关的 API；
 2. 网友做的管理界面 [hyper/docker-registry-web](https://hub.docker.com/r/hyper/docker-registry-web/)；
