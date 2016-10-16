@@ -4,12 +4,12 @@
 
 安装过程并不复杂，但是要注意以下自己系统的版本号，具体参考 [Installation on Ubuntu](https://docs.docker.com/engine/installation/linux/ubuntulinux/)。
 
-如果被墙的话，可以通过国内镜像进行安装，具体参考[在 Linux上 安装 Docker](http://get.daocloud.io/#install-docker)。
+如果被墙的话，可以通过阿里云镜像进行安装，安装方法请看 https://cr.console.aliyun.com/
 
 通过国内镜像安装的方法如下：
 
 ```shell
-curl -sSL https://get.daocloud.io/docker | sh
+curl -sSL http://acs-public-mirror.oss-cn-hangzhou.aliyuncs.com/docker-engine/internet | sh -
 ```
 
 ## 下载镜像
@@ -19,7 +19,17 @@ curl -sSL https://get.daocloud.io/docker | sh
 令 Docker 默认使用国内镜像的方法：
 
 ```shell
-curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://fd26f1ee.m.daocloud.io
+mkdir -p /etc/systemd/system/docker.service.d
+vi /etc/systemd/system/docker.service.d/mirror.conf
+
+[Service] 
+ExecStart= 
+ExecStart=/usr/bin/docker daemon -H fd:// --registry-mirror=https://qby02i3s.mirror.aliyuncs.com
+
+:wq
+
+systemctl daemon-reload
+systemctl restart docker
 ```
 
 ## 运行第一个容器
@@ -75,6 +85,13 @@ vi /etc/docker/daemon.json
 ```shell
 service docker restart
 ```
+
+## 搭建私有的 Register
+
+可以参考以下两个容器：
+
+1. 官方提供的简易版 [Register](https://hub.docker.com/_/registry/)，没有管理界面，只提供相关的 API；
+2. 网友做的管理界面 [hyper/docker-registry-web](https://hub.docker.com/r/hyper/docker-registry-web/)；
 
 ## 常见问题
 
