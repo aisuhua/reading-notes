@@ -80,7 +80,13 @@ docker login register.suhua123.com
 Username:admin
 Password:
 
+# 推送镜像
 docker tag f753707788c5 register.suhua123.com/library/ubuntu
 docker push register.suhua123.com/library/ubuntu
+
+# 拉取镜像
+docker pull register.suhua123.com/library/ubuntu
 ```
+
+
 
