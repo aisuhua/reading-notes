@@ -100,7 +100,11 @@ vi /etc/docker/daemon.json
 
 # 重启 docker
 service docker restart
+
+# 拉取镜像
+docker pull register.suhua123.com/library/ubuntu
 ```
+
 
 ## 搭建私有的 Register
 
