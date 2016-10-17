@@ -4,7 +4,7 @@
 
 安装过程并不复杂，但是要注意以下自己系统的版本号，具体参考 [Installation on Ubuntu](https://docs.docker.com/engine/installation/linux/ubuntulinux/)。
 
-如果被墙的话，可以通过阿里云镜像进行安装，安装方法请看 https://cr.console.aliyun.com/
+如果被墙的话，可以通过阿里云镜像进行安装，安装方法请看 http://mirrors.aliyun.com/help/docker-engine
 
 通过国内镜像安装的方法如下：
 
@@ -14,7 +14,7 @@ curl -sSL http://acs-public-mirror.oss-cn-hangzhou.aliyuncs.com/docker-engine/in
 
 ## 下载镜像
 
-实际上，下载的命令很简单，不过很不走运，你依然可能被墙，此时依然求组于国内镜像，使用方法具体请看[配置 Docker 加速器](https://www.daocloud.io/mirror.html#accelerator-doc)。
+实际上，下载的命令很简单，不过很不走运，你依然可能被墙，此时依然求组于国内镜像，使用方法具体请看[配置 Docker 加速器](https://cr.console.aliyun.com/)。
 
 令 Docker 默认使用国内镜像的方法：
 
@@ -59,7 +59,7 @@ docker start first_container
 docker exec -it first_container /bin/bash
 
 # 附着到制定的容器上
-# docker attach first_container 
+docker attach first_container 
 ```
 
 值得注意的是通过 `docker attach` 命令附着上的容器，一旦退出 shell 交互界面，那么该容器会随即退出。这与通过在容器中执行命令进入容器的方式不太一样。
@@ -92,6 +92,7 @@ service docker restart
 
 1. 官方提供的简易版 [Register](https://hub.docker.com/_/registry/)，没有管理界面，只提供相关的 API；
 2. 网友做的管理界面 [hyper/docker-registry-web](https://hub.docker.com/r/hyper/docker-registry-web/)；
+3. 企业版管理界面 [vmware/harbor](https://github.com/vmware/harbor/)；
 
 ## 常见问题
 
