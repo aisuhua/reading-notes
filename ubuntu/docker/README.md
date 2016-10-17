@@ -85,6 +85,22 @@ vi /etc/docker/daemon.json
 ```shell
 service docker restart
 ```
+## 使用第三方 Register 的镜像
+
+我们可以拉取第三方的镜像进行使用，步骤如下：
+
+```
+vi /etc/docker/daemon.json
+
+{
+	"insecure-registries": ["register.suhua123.com"],
+}
+
+:wq
+
+# 重启 docker
+service docker restart
+```
 
 ## 搭建私有的 Register
 
