@@ -2,8 +2,8 @@
 
 搭建一个私有 Register：
 
-1. 安装 docker-compose
-2. 下载并安装 harbor
+1. 安装 [docker-compose](https://docs.docker.com/compose/install/)
+2. 下载并安装 [harbor](https://github.com/vmware/harbor)
 3. 基本使用
 
 ## 安装 docker-compose
@@ -53,10 +53,10 @@ vi /etc/hosts
 127.0.0.1 register.suhua123.com
 ```
 
-### 安装
+### 启动
 
 ```shell
-# 安装（第一次启动如果没有安装就会执行安装）
+# 启动（第一次启动如果没有安装就会执行安装）
 docker-compose up -d
 
 # 退出
