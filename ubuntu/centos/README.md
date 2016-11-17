@@ -2,7 +2,7 @@
 
 ## 环境
 
-```shell
+```
 [root@centos6 ~]# uname -r
 2.6.32-642.6.2.el6.x86_64
 [root@centos6 ~]# cat /etc/issue
