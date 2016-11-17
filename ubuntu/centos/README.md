@@ -42,6 +42,11 @@ vi /etc/sysconfig/network
 NETWORKING=yes
 HOSTNAME=centos6
 NTPSERVERARGS=iburst
+
+# 需同时修改 hosts 
+vi /etc/hosts
+
+127.0.0.1   centos6
 ```
 
 重启网络
@@ -109,10 +114,17 @@ SELINUX=disabled
 SELINUXTYPE=targeted
 ```
 
+## 安装增强功能
 
+依次点击：设备 -> 安装增强功能。此时
 
+## 参考
 
-
+- [CentOS6.x 修改主机名(hostname)](http://www.niaoyun.com/help/basics/561.html)
+- [查看 SELinux状态及关闭SELinux](http://bguncle.blog.51cto.com/3184079/957315)
+- [How to configure static IP address on CentOS 6.5 minimal](http://lintut.com/how-to-configure-static-ip-address-on-centos-6-5-minimal/)
+- [linux网络相关配置文件](https://www.cnblogs.com/starof/p/4153663.html)
+- [VirtualBox安装增强功能 （全屏，鼠标来回移动）](http://www.programgo.com/article/4677139778/)
 
 
 
