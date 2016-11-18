@@ -116,7 +116,16 @@ SELINUXTYPE=targeted
 
 ## 安装增强功能
 
-依次点击：设备 -> 安装增强功能。此时
+依次点击：设备 -> 安装增强功能，此时虚拟光盘就会被挂载上。
+
+```
+yum update -y
+
+cd /media/VBOXADDITIONS_5.0.24_108355
+./VBoxLinuxAddition.run
+
+reboot
+```
 
 ## 参考
 
