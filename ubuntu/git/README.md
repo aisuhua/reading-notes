@@ -66,4 +66,22 @@ git push origin master --force
 
 此时，远程服务器就会回滚到 `reset` 后的版本了。
 
-#
+### 合并多个 commit
+
+在开发一个功能时提交了多次，但你喜欢把多次提交合并成一次提交。然后再往 upstream pull request。
+
+```shell
+# 查看 commit
+git log
+
+# 合并前 3 个 commit，请按提示进行合并
+git rebase -i HEAD~3
+
+# 把合并结果同步到远程仓库
+git push origin dev-notice --force
+```
+
+详细步骤可参考：[使用git rebase合并多次commit](http://blog.csdn.net/yangcs2009/article/details/47166361)。
+
+
+
