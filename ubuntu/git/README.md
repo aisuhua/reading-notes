@@ -107,7 +107,7 @@ git clean -d -f ""
 - [error: pathspec 'test-branch' did not match any file(s) known to git](http://stackoverflow.com/questions/30800454/error-pathspec-test-branch-did-not-match-any-files-known-to-git)
 - [git Please move or remove them before you can merge.](http://www.cnblogs.com/wuchanming/p/5428894.html)
 - [git查看commit的内容](http://blog.csdn.net/qxb1229/article/details/8189997)
-
+- [使用git合并多个提交](http://www.708luo.com/posts/2012/07/git-combine-commmit/)
 
 
 

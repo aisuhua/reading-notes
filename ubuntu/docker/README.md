@@ -105,7 +105,6 @@ service docker restart
 docker pull register.suhua123.com/library/ubuntu
 ```
 
-
 ## 搭建私有的 Register
 
 可以参考以下两个镜像：
@@ -122,4 +121,4 @@ docker pull register.suhua123.com/library/ubuntu
 
 ## 参考文献
 
-
+- [Why can't I clear the terminal when inside a Docker shell?](https://www.reddit.com/r/docker/comments/52fio5/why_cant_i_clear_the_terminal_when_inside_a/)

@@ -32,3 +32,7 @@ extension_dir	/usr/lib/php5/20131226
 答：CLI 和 php 进程所使用的是两个不一样的 php.ini 文件。可以通过命令 `php --ini` 查看 CLI 配置文件的位置。
 
 一般当出现在 phpinfo 中有相关模块，而通过命令行 `php -m` 却没有，都是因为它们使用了不一样的配置文件所造成。请参考：http://bbs.csdn.net/topics/390939558
+
+## TODO
+
+- [PHP CLI]

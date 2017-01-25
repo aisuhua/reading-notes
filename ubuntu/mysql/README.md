@@ -34,6 +34,6 @@ select * from information_schema.tables where table_schema='DB_NAME' AND table_n
 
 ## 参考文献
 
-- [mysql 怎么查看表结构修改的时间](http://www.itpub.net/thread-1823722-1-1.html)
+- [mysql怎么查看表结构修改的时间](http://www.itpub.net/thread-1823722-1-1.html)
 - 
 
