@@ -101,6 +101,14 @@ git checkout -b dev --track origin/dev
 git clean -d -f ""
 ```
 
+### 换仓库
+
+```shell
+git remote rm origin
+git remote add origin git@github.com:username/repository.git
+git push origin master
+```
+
 ## 参考文献
 
 - [使用git rebase合并多次commit](http://blog.csdn.net/yangcs2009/article/details/47166361)
@@ -108,7 +116,7 @@ git clean -d -f ""
 - [git Please move or remove them before you can merge.](http://www.cnblogs.com/wuchanming/p/5428894.html)
 - [git查看commit的内容](http://blog.csdn.net/qxb1229/article/details/8189997)
 - [使用git合并多个提交](http://www.708luo.com/posts/2012/07/git-combine-commmit/)
-
+- [每次git push到远程库都要输入用户名和密码？](http://blog.csdn.net/sakurallj/article/details/52776457)
 
 
 

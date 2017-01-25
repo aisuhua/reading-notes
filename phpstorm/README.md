@@ -26,8 +26,29 @@
 
 	如果你想指定 SQL 语句的检测语法，可以在 Settings -> Languages and Framework -> SQL Dialet -> SELECT eg.MySQL.
 
+## 支持中文
+
+在 phpstorm.sh 中加入以下内容
+
+```shell
+# 省略原来的代码
+CLASSPATH="$CLASSPATH:$IDE_HOME/lib/jna.jar"
+if [ -n "$WEBIDE_CLASSPATH" ]; then
+  CLASSPATH="$CLASSPATH:$WEBIDE_CLASSPATH"
+fi
+# ------需要加入的代码begin-----------
+XMODIFIERS="@im=fcitx"
+export XMODIFIERS
+# ------需要加入的代码end----  一定要在 # Run the IDE. 的前面的如何地方  -------
+# ---------------------------------------------------------------------
+# Run the IDE.
+# ---------------------------------------------------------------------
+# 省略原来的代码
+```
+
 ## 参考文献
 
 - [如何使用 PhpStorm 測試與除錯?](http://oomusou.io/phpstorm/phpstorm-debug-testing/)
 - [本地开发使用xdebug+phpstorm实现断点调试](http://www.ekan001.com/articles/27)
 - [Avoid syntax error warnings when using string interpolation in SQL query generation](http://stackoverflow.com/questions/25529608/avoid-syntax-error-warnings-when-using-string-interpolation-in-sql-query-generat)
+- [ubuntu下phpstorm无法输入中文的解决办法](http://blog.csdn.net/sakurallj/article/details/52181084)
