@@ -6,7 +6,9 @@
 
 ```sql
 desc TABLE;
+
 show full columns from TABLE;
+
 show create table TABLE;
 ```
 
@@ -22,6 +24,7 @@ select TABLE_NAME from INFORMATION_SCHEMA.TABLES where TABLE_SCHEMA='DB_NAME' AN
 
 ```sql
 show table status from DB_NAME where name = 'TABLE'\G;
+
 select * from information_schema.tables where table_schema='DB_NAME' AND table_name='TABLE'\G;
 ```
 
