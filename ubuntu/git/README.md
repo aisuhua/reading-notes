@@ -81,27 +81,32 @@ git rebase -i HEAD~3
 git push origin dev-notice --force
 ```
 
-详细步骤可参考：[使用git rebase合并多次commit](http://blog.csdn.net/yangcs2009/article/details/47166361)。
+### 查看日志
 
-### dev 分支关联
+```shell
+git log
+git log -n 1 --stat
+git log -n 1 -p
+```
+
+### 关联 dev 分支
 
 ```shell
 git checkout -b dev --track origin/dev
 ```
 
-详情请看：[error: pathspec 'test-branch' did not match any file(s) known to git](http://stackoverflow.com/questions/30800454/error-pathspec-test-branch-did-not-match-any-files-known-to-git)。
-
-### 删除没有加入版本库的文件
+### 删除其他文件
 
 ```shell
 git clean -d -f ""
 ```
 
-详情请看：[git Please move or remove them before you can merge.](http://www.cnblogs.com/wuchanming/p/5428894.html)
+## 参考文献
 
-
-
-
+- [使用git rebase合并多次commit](http://blog.csdn.net/yangcs2009/article/details/47166361)
+- [error: pathspec 'test-branch' did not match any file(s) known to git](http://stackoverflow.com/questions/30800454/error-pathspec-test-branch-did-not-match-any-files-known-to-git)
+- [git Please move or remove them before you can merge.](http://www.cnblogs.com/wuchanming/p/5428894.html)
+- [git查看commit的内容](http://blog.csdn.net/qxb1229/article/details/8189997)
 
 
 
