@@ -12,7 +12,7 @@ show create table TABLE;
 
 ### 查找表
 
-```
+```sql
 show tables;
 
 select TABLE_NAME from INFORMATION_SCHEMA.TABLES where TABLE_SCHEMA='DB_NAME' AND TABLE_NAME like 'TABLE_%';
