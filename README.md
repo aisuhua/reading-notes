@@ -35,6 +35,7 @@
 - [PHP-FIG PSR中文版](https://github.com/PizzaLiu/PHP-FIG)
 - [PHP Package Checklist](https://github.com/reinink/phppackagechecklist.com)
 - [Keep a CHANGELOG](https://github.com/olivierlacan/keep-a-changelog)
+- [Best Practices for Modern PHP Development](https://www.airpair.com/php/posts/best-practices-for-modern-php-development)
 
 ### 文章
 
