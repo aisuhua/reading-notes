@@ -81,6 +81,19 @@ git rebase -i HEAD~3
 git push origin dev-notice --force
 ```
 
+### 修改 commit
+
+```shell
+git log
+
+git rebase -i HEAD~3
+
+# 把 pick 修改为 edit 再保存和提交
+
+git commit --amend
+git rebase --continue
+```
+
 ### 查看日志
 
 ```shell
