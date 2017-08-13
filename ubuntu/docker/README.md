@@ -4,12 +4,16 @@
 
 安装过程并不复杂，但是要注意以下自己系统的版本号，具体参考 [Installation on Ubuntu](https://docs.docker.com/engine/installation/linux/ubuntulinux/)。
 
-如果被墙的话，可以通过阿里云镜像进行安装，安装方法请看 http://mirrors.aliyun.com/help/docker-engine
+如果被墙的话，可以通过阿里云镜像进行安装，安装方法请看 [Ali-OSM](http://mirrors.aliyun.com/help/docker-engine) 或者 [DaoCloud](http://get.daocloud.io/#install-docker)
 
 通过国内镜像安装的方法如下：
 
-```shell
+```shells
+# 阿里云镜像
 curl -sSL http://acs-public-mirror.oss-cn-hangzhou.aliyuncs.com/docker-engine/internet | sh -
+
+# DaoColud镜像
+curl -sSL https://get.daocloud.io/docker | sh
 ```
 
 ## 下载镜像
@@ -19,17 +23,14 @@ curl -sSL http://acs-public-mirror.oss-cn-hangzhou.aliyuncs.com/docker-engine/in
 令 Docker 默认使用国内镜像的方法：
 
 ```shell
-mkdir -p /etc/systemd/system/docker.service.d
-vi /etc/systemd/system/docker.service.d/mirror.conf
-
-[Service] 
-ExecStart= 
-ExecStart=/usr/bin/docker daemon -H fd:// --registry-mirror=https://qby02i3s.mirror.aliyuncs.com
-
-:wq
-
-systemctl daemon-reload
-systemctl restart docker
+sudo mkdir -p /etc/docker
+sudo tee /etc/docker/daemon.json <<-'EOF'
+{
+  "registry-mirrors": ["https://qby02i3s.mirror.aliyuncs.com"]
+}
+EOF
+sudo systemctl daemon-reload
+sudo systemctl restart docker
 ```
 
 ## 运行第一个容器
