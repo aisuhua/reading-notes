@@ -1,6 +1,27 @@
 # ArchLinux
 
-## 跳板机
+## 技巧
+
+### 自启动
+
+Gnome 桌面系统
+
+```shell
+cp /usr/share/applications/shadowsocks-qt5.desktop ~/.config/autostart/.
+```
+
+### 创建快捷方式
+
+```
+sudo vim /usr/bin/phpstorm
+
+#! /bin/bash 
+/home/suhua/software/PhpStorm-172.3544.41/bin/phpstorm.sh &
+
+:wq
+```
+
+### 跳板机
 
 安装 xl2tpd
 
@@ -123,5 +144,6 @@ ip link
 此时，跳板机就可以登陆上了。
 
 
+### 参考文献
 
-
+1. [Startup applications](https://wiki.archlinux.org/index.php/GNOME#Startup_applications)
