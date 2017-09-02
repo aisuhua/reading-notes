@@ -1,6 +1,6 @@
 # ArchLinux
 
-## 代理
+## 跳板机
 
 安装 xl2tpd
 
@@ -23,7 +23,7 @@ debug state = no
 debug tunnel = no
 
 [lac demo]
-lns = <b>your_vpn_server_ip</b>
+lns = <b>YOUR_VPN_SERVER_IP</b>
 redial = yes
 redial timeout = 5
 require chap = yes
@@ -55,8 +55,8 @@ defaultroute
 usepeerdns
 debug
 connect-delay 5000
-name <b>your_vpn_username</b>
-password <b>your_pre_shared_key</b>
+name <b>YOUR_VPN_USERNAME</b>
+password <b>YOUR_PRE_SHARED_KEY</b>
 logfile /var/log/l2tpd.client.demo.log
 
 ipparam route:10.10.0.0/16,10.11.0.0/16,10.21.0.0/16,10.22.0.0/16,10.220.0.0/16
@@ -112,9 +112,9 @@ ip link
     link/ether 68:14:01:4c:1e:4b brd ff:ff:ff:ff:ff:ff
 4: ppp0: <POINTOPOINT,MULTICAST,NOARP> mtu 1410 qdisc noop state DOWN mode DEFAULT group default qlen 3
     link/ppp 
-``
+```
 
-此时 VPN 跳板机就可以登陆上了。
+此时跳板机就可以登陆上了。
 
 
 
