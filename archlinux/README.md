@@ -91,6 +91,8 @@ if [ -n "${5}" -a -n "${6}" ]; then
        esac
    done
 fi
+
+:wq
 ```
 
 重启 xl2tpd
@@ -99,22 +101,26 @@ fi
 systemctl restart xl2tpd
 ```
 
-查看网络状态 ppp0
+查看网络状态
 
-```
+```shell
 ip link
+```
 
+留意 ppp0
+
+```shell
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
 2: enp2s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc fq_codel state DOWN mode DEFAULT group default qlen 1000
     link/ether 64:00:6a:3b:d5:c3 brd ff:ff:ff:ff:ff:ff
 3: wlp3s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DORMANT group default qlen 1000
     link/ether 68:14:01:4c:1e:4b brd ff:ff:ff:ff:ff:ff
-4: ppp0: <POINTOPOINT,MULTICAST,NOARP> mtu 1410 qdisc noop state DOWN mode DEFAULT group default qlen 3
-    link/ppp 
+4: <b>ppp0: <POINTOPOINT,MULTICAST,NOARP> mtu 1410 qdisc noop state DOWN mode DEFAULT group default qlen 3
+    link/ppp</b>
 ```
 
-此时跳板机就可以登陆上了。
+此时，跳板机就可以登陆上了。
 
 
 
