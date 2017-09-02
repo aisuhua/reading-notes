@@ -30,7 +30,7 @@
 
 ### 连接到因特网
 
-#### 有线网络
+**有线网络**
 
 有线网络一般就自动联网，查看网络状态。
 
@@ -38,7 +38,7 @@
 # ping -c 3 www.baidu.com
 ```
 
-#### 无线网络
+**无线网络**
 
 查看无线网卡名称，一般形如 **wlp3s0**。
 
@@ -95,7 +95,7 @@ fdisk /dev/sda
 
 ### 挂载分区
 
-#### 挂载数据分区
+**挂载数据分区**
 
 首先将根分区挂载到 /mnt，例如：
 
@@ -113,7 +113,7 @@ fdisk /dev/sda
 # mount /dev/sda4 /mnt/www
 ```
 
-#### 挂载 swap 分区
+**挂载 swap 分区**
 
 ```shell
 # mkswap /dev/sda2
@@ -134,7 +134,7 @@ fdisk /dev/sda
 将国内的镜像提到该文件的最前面即可。
 
 ```shell
-/etc/pacman.d/mirrorlist
+# vim /etc/pacman.d/mirrorlist
 ```
 
 ### 安装基本系统
