@@ -153,6 +153,199 @@ fdisk /dev/sda
 
 至此，ArchLinux 安装完毕。
 
+## 配置系统
+
+### Fstab
+
+用以下命令生成 fstab 文件:
+
+```shell
+# genfstab -U /mnt >> /mnt/etc/fstab
+```
+
+强烈建议 在执行完以上命令后，后检查一下生成的 /mnt/etc/fstab 文件是否正确。
+
+### Chroot
+
+Change root 到新安装的系统：
+
+```shell
+# arch-chroot /mnt
+```
+
+此时，你已经进入了全新的 ArchLinux 系统了。
+
+## 时区
+
+设置 时区:
+
+```shell
+# ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+```
+
+建议设置时间标准 为 UTC，并调整 时间漂移:
+
+```shell
+# hwclock --systohc --utc
+```
+
+### Locale
+
+去掉以下注释：
+
+```shell
+# vim /etc/locale.gen
+
+en_US.UTF-8 UTF-8
+zh_CN.UTF-8 UTF-8
+zh_TW.UTF-8 UTF-8
+
+:wq
+```
+
+接着执行locale-gen以生成locale讯息：
+
+```shell
+# locale-gen
+```
+
+创建 locale.conf 并提交您的本地化选项：
+
+```shell
+# echo LANG=en_US.UTF-8 > /etc/locale.conf
+```
+
+### 主机名
+
+要设置 hostname，将其添加 到 /etc/hostname, myhostname 是需要的主机名:
+
+```shell
+# echo myhostname > /etc/hostname
+```
+
+建议添加对应的信息到hosts(5):
+
+```shell
+# vim /etc/hosts
+
+127.0.0.1	localhost.localdomain	localhost
+::1		localhost.localdomain	localhost
+127.0.1.1	myhostname.localdomain	myhostname
+```
+
+### 网络配置
+
+无线网络需安装 `wpa_supplicant` 软件包
+
+```shell
+# pacman -S wpa_supplicant
+```
+
+### Initramfs
+
+如果修改了 mkinitcpio.conf，用以下命令创建一个初始 RAM disk：
+
+```shell
+# mkinitcpio -p linux
+```
+
+### Root 密码
+
+设置 root 密码:
+
+```shell
+# passwd
+```
+
+
+### 安装引导程序
+
+```shell
+# grub-install --target=i386-pc /dev/sdx
+# grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+### 重启
+
+输入 exit 或按 Ctrl+D 退出 chroot 环境。
+
+可选用 umount -R /mnt 手动卸载被挂载的分区：这有助于发现任何“繁忙”的分区，并通过 fuser(1) 查找原因。
+
+最后，通过执行 reboot 重启系统：systemd 将自动卸载仍然挂载的任何分区。不要忘记移除安装介质，然后使用root帐户登录到新系统。
+
+## 桌面系统
+
+### 显卡驱动
+
+如果不知道显卡类型，请执行如下命令进行查询：
+
+```shell
+$ lspci | grep -e VGA -e 3D
+```
+
+安装相应显卡
+
+```shell
+# pacman -S xf86-video-ati
+```
+
+###  Xorg
+
+安装 xorg 
+
+```shell
+# pacman -S xorg-server
+```
+
+### 安装桌面管理器
+
+安装 Gnome
+
+```shell
+# pacman -S gnome gnome-extra
+# systemctl enable gdm
+# reboot
+```
+
+重启后，即可进入桌面环境。
+
+### 中文字体
+
+```shell
+# pacman -S wqy-microhei
+```
+
+### 输入法
+
+安装输入法
+
+```shell
+# pacman -S fcitx fcitx-im fcitx-sunpinyin fcitx-configtool
+```
+
+Gnome 需要做以下配置，才能正常切换输入法：
+
+```shell
+# vim /etc/environment
+
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+
+:wq
+```
+
+## 参考文献
+
+1. [Installation guide](https://wiki.archlinux.org/index.php/Installation_guide_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#.E9.80.89.E6.8B.A9.E9.95.9C.E5.83.8F)
+2. [Xorg](https://wiki.archlinux.org/index.php/Xorg_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87))
+3. [GNOME](https://wiki.archlinux.org/index.php/GNOME_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87))
+4. [ArchLinux 的安装经历](http://blog.sina.com.cn/s/blog_6018427d0102wyl5.html)
+5. [ArchLinux安装笔记](http://blog.csdn.net/zhyh1986/article/details/40709389)
+6. [Fcitx](https://wiki.archlinux.org/index.php/Fcitx_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87))
+
+
+
 
 
 
